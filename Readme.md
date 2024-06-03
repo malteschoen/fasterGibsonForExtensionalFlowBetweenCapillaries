@@ -16,10 +16,10 @@ WIP
 
 ## The theory behind it
 
-WIP
+![altText](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/gibson_elongational_pressure_losses.jpg)
 
 ## Literature
-[1]  Gibson, A. G.: Die entry flow of reinforced polymers. In: Composites Bd. 20 (1989), Nr. 1, S. 57–64 - DOI:[https://doi.org/10.1016/0010-4361(89)90683-6](https://doi.org/10.1016/0010-4361(89)90683-6)
+[1]  Gibson, A. G.: Die entry flow of reinforced polymers. In: Composites 20 (1989) 1, p. 57–64 - DOI: [https://doi.org/10.1016/0010-4361(89)90683-6](https://doi.org/10.1016/0010-4361(89)90683-6)
 
 
 ## What else should I know about?
