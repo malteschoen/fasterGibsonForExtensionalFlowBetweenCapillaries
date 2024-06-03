@@ -18,5 +18,9 @@ WIP
 
 WIP
 
+## Literature
+[1]  Gibson, A. G.: Die entry flow of reinforced polymers. In: Composites Bd. 20 (1989), Nr. 1, S. 57–64 - DOI:[https://doi.org/10.1016/0010-4361(89)90683-6](https://doi.org/10.1016/0010-4361(89)90683-6)
+
+
 ## What else should I know about?
 (c) Malte Schön, 2022-2024
