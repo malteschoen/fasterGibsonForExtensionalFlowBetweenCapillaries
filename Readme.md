@@ -33,9 +33,9 @@ With I and t defining the elongational viscosity
 ```
 
 R1, R0 and alpha define the geometry of the capilliaries
-- R1 is the bigger radius
-- R0 is the smaller radius
-- alpha is the conical half-angle
+- R0 is the bigger radius
+- R1 is the smaller radius
+- alpha is the conical half-angle (90 degrees for 'butted' capillaries , 59 degrees for holes drilled with DIN 1897 drill bits)
 
 Finally, phi defined as follows 
 
