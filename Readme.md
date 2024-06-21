@@ -18,7 +18,7 @@ WIP
 The elongational pressure drop according to Gibson [1] is: 
 
 ```math
-\Delta p_{elong} =I \dot{\gamma}_{app,R0}^{t}
+\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t}
 \left (\frac{2}{3t}
 \left (\frac{sin(\alpha)(1+cos(\alpha))}{4} 
 \right )^{t}
