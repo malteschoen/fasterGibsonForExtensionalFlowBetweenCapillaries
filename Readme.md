@@ -37,10 +37,10 @@ R1, R0 and alpha define the geometry of the capilliaries
 - R1 is the smaller radius
 - alpha is the conical half-angle (90 degrees for 'butted' capillaries , 59 degrees for holes drilled with DIN 1897 drill bits)
 
-Finally, phi defined as follows 
+Finally, $\phi$ defined as follows 
 
 ```math
-\Phi(t,\alpha) = \int_{0}^{\alpha}\left \{(1+cos(\beta))^{t-1} (sin(\beta))^{t+1} \beta  \right \}  d\beta
+\phi(t,\alpha) = \int_{0}^{\alpha}\left \{(1+cos(\beta))^{t-1} (sin(\beta))^{t+1} \beta  \right \}  d\beta
 ```
 
 ## Literature
