@@ -1,7 +1,9 @@
-# fasterGibsonForExtensionalFlowBetweenCapillaries
+## Chapter 0: Table of contents
 
-## What is this?
+## Chapter 1: Mission statement
 
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
 This repository is supposed to hold information
 
 1. on the relations between elongational/extensional viscosity AND flow rate AND elongational/extensional pressure drop
@@ -10,27 +12,20 @@ This repository is supposed to hold information
 
 and also materials for other researchers to reproduce our findings and improve on them.
 
-## How can I use this?
+</details>
 
-WIP
+## Chapter 2: Theory
 
-## The theory behind it
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
 The elongational pressure drop according to Gibson [1] is: 
 
-```math
-\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t}
-\left (\frac{2}{3t}
-\left (\frac{sin(\alpha)(1+cos(\alpha))}{4} 
-\right )^{t}
-\left ( 1- \left [ \frac{R_{1}}{R_{0}} \right ]^{3t} \right)
-+\frac{\phi(t,\alpha)}{4^{t}}
-\right )
-```
+$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t}\left (\frac{2}{3t}\left (\frac{sin(\alpha)(1+cos(\alpha))}{4} \right )^{t}\left ( 1- \left [ \frac{R_{1}}{R_{0}} \right ]^{3t} \right)+\frac{\phi(t,\alpha)}{4^{t}}\right)$
+
 With I and t defining the elongational viscosity
 
-```math
-\eta_{elong} =I \dot{\epsilon}^{t-1}
-```
+$\eta_{elong} =I \dot{\epsilon}^{t-1}$
 
 R1, R0 and alpha define the geometry of the capilliaries
 - R0 is the bigger radius
@@ -39,13 +34,28 @@ R1, R0 and alpha define the geometry of the capilliaries
 
 Finally, $\phi$ defined as follows 
 
-```math
-\phi(t,\alpha) = \int_{0}^{\alpha}\left \{(1+cos(\beta))^{t-1} (sin(\beta))^{t+1} \beta  \right \}  d\beta
-```
+$\phi(t,\alpha) = \int_{0}^{\alpha}\left \{(1+cos(\beta))^{t-1} (sin(\beta))^{t+1} \beta  \right \}  d\beta$
+
+</details>
+
+## Chapter 3: Simplifications
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+TBD
+</details>
+
+
+## Chapter 4: Practical ussge
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+TBD
+</details>
 
 ## Literature
 [1]  Gibson, A. G.: Die entry flow of reinforced polymers. In: Composites 20 (1989) 1, p. 57–64 - DOI: [https://doi.org/10.1016/0010-4361(89)90683-6](https://doi.org/10.1016/0010-4361(89)90683-6)
 
 
-## What else should I know about?
-(c) Malte Schön, 2022-2024
