@@ -16,11 +16,11 @@ and also materials for other researchers to reproduce our findings and improve o
 
 ## Chapter 2: Theory
 
-The elongational pressure drop according to Gibson [1] is: 
+The elongational pressure drop between two cylindrical capillaries according to Gibson [1] is: 
 ```math
-$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t}\left (\frac{2}{3t}\left (\frac{sin(\alpha)(1+cos(\alpha))}{4} \right )^{t}\left ( 1- \left [ \frac{R_{1}}{R_{0}} \right ]^{3t} \right)+\frac{\phi(t,\alpha)}{4^{t}}\right)$
+\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t}\left (\frac{2}{3t}\left (\frac{sin(\alpha)(1+cos(\alpha))}{4} \right )^{t}\left ( 1- \left [ \frac{R_{1}}{R_{0}} \right ]^{3t} \right)+\frac{\phi(t,\alpha)}{4^{t}}\right)
 ```
-Finally, $\phi$ defined as follows 
+With $\phi$ defined as follows 
 
 ```math
 \phi(t,\alpha) = \int_{0}^{\alpha}\left \{(1+cos(\beta))^{t-1} (sin(\beta))^{t+1} \beta  \right \}  d\beta
@@ -35,14 +35,32 @@ R1, R0 and alpha define the geometry of the capilliaries
 - R0 is the bigger radius
 - R1 is the smaller radius
 - alpha is the conical half-angle (90 degrees for 'butted' capillaries , 59 degrees for holes drilled with DIN 1897 drill bits)
-- 
+
+gamma_dot is the shear rate. The average (!) elongation rate is:
+
+TBA
+  
 </details>
 
 ## Chapter 3: Simplifications
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
-As seen above, $\phi$ only depends on alpha. Hence it is easy to tabulate it as an function of alpha. 
+
+As seen above, $\phi$ only depends on $\alpha$ and $t$ Hence it is easy to tabulate it and arrive at an approximation formula (in which $\alpha$ in degrees is to be input):
+
+$\phi(t,\alpha) = max(0,\frac{1.2\alpha-33}{100})$
+
+See figure 1 below for the quality of the approximation.
+
+However, this only eliminates the last component of Gibsons unwieldy equation. Considering only the term in the brackets, the influencing factors are
+- Ratio of the radii (expected to fall between 1 to 5 and 1 to 30)
+- Elongational viscosity power law exponent t (expected to fall between 1 and 0.25)
+- Half-angle alpha (expected to fall between 30 and 90 degrees)
+
+We can now tabulate these results and find a simplification.
+
+
 TBD
 </details>
 
@@ -53,6 +71,8 @@ TBD
 <summary>CLICK TO EXPAND AND READ</summary>
 
 TBD
+
+We also need to explain why we ignore the lambda bump.
 </details>
 
 ## Literature
