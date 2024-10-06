@@ -47,32 +47,45 @@ TBA
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
-As seen above, $\phi$ only depends on $\alpha$ and $t$ Hence it is easy to tabulate it and arrive at an approximation formula (in which $\alpha$ in degrees is to be input):
+As seen above, $\phi$ only depends on $\alpha$ and $t$.
+
+Hence it is easy to tabulate it and arrive at an approximation formula (in which $\alpha$ in degrees is to be input):
 
 $\phi(t,\alpha) = max(0,\frac{1.2\alpha-33}{100})$
 
 See figure 1 below for the quality of the approximation.
 
 However, this only eliminates the last component of Gibsons unwieldy equation. Considering only the term in the brackets, the influencing factors are
-- Ratio of the radii (expected to fall between 1 to 5 and 1 to 30)
+- Ratio of the radii (expected to fall between 1-to-5 and 1-to-30)
 - Elongational viscosity power law exponent t (expected to fall between 1 and 0.25)
 - Half-angle alpha (expected to fall between 30 and 90 degrees)
 
-We can now tabulate these results and find a simplification.
+We can now tabulate these results and plot them visually (figure 2).
 
 
-TBD
+
 </details>
 
 
-## Chapter 4: Practical usage
+## Chapter 4: Limitations of the model, guidance on pratical usage
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+Like every other model, this model is wrong in the sense that it does not capture the entirety of the physical processes involved. Consequently it can only serve an an useful approximation provided a specific set of conditions is met. I hope that the model - like many other engineering model - is useful still.
+
+The model assumes:
+- isothermal flow
+- 
+</details>
+
+## Chapter 5: Some usage examples
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
 TBD
 
-We also need to explain why we ignore the lambda bump.
 </details>
 
 ## Literature
