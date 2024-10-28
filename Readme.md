@@ -1,6 +1,20 @@
 [![DOI](https://zenodo.org/badge/791671677.svg)](https://doi.org/10.5281/zenodo.13999721)
 
 ## Chapter 0: Table of contents
+- Chapter 1: Mission statement
+- Chapter 2: Theory
+- Chapter 3.1: Initial simple formula
+- Chapter 3.2: Verification/Validation of initial simple formula
+- Chapter 4.1: Advanced formula
+- Chapter 4.2: Verification/Validation of advanced formula
+- Chapter 5.1: Legacy linear formula
+- Chapter 5.2: Verification/Validation of legacy linear formula
+- Chapter 6: Limitations of the model
+- Chapter 7: Some usage examples
+- Chapter 8: Citation
+- Chapter 9: Contact
+- Chapter 10: Literature
+
 
 ## Chapter 1: Mission statement
 
@@ -104,7 +118,8 @@ If we use the data on injection capillary rheometer entrance pressure drops give
 Please note that we use the power-law parameters of elongational viscosity given by [1] in their table 1.
 
 ![figure3](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_3.png)
-Figure 3: Approximation of 'bracketed term'
+
+Figure 3: Comparison between experimental data and our model
 
 Expressed in mathematical terms, our formula results in an average error of 0.5 bar or 12 % (i.e. our model usually predicts higher values).
 
@@ -130,7 +145,7 @@ WIP
 
 </details>
 
-## Chapter 5.1: Legacy formula
+## Chapter 5.1: Legacy linear formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -140,7 +155,7 @@ $\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \left [ \frac{4}{3}(1-t) 
 
 </details>
 
-## Chapter 5.2: Verification/Validation of legacy formula
+## Chapter 5.2: Verification/Validation of legacy linear formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -177,16 +192,16 @@ WIP
 </details>
 
 
-## Citation
+## Chapter 8: Citation
 
-You can (and should) cite this repository using the DOI given above.
+You can (and should) cite this work using the DOI given above.
 
-## Contact
+## Chapter 9: Contact
 
 To get in touch, drop an e-mail to malte.schoen@rwth-aachen.de.
 
 
-## Literature
+## Chapter 10: Literature
 [1]  Gibson, A. G.: Die entry flow of reinforced polymers. In: Composites 20 (1989) 1, p. 57–64 - DOI: [https://doi.org/10.1016/0010-4361(89)90683-6](https://doi.org/10.1016/0010-4361(89)90683-6)
 
 
