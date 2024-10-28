@@ -52,12 +52,16 @@ $\dot{\epsilon}_{circumAvg}= sin(\alpha)(1+cos(\alpha)) \frac {\dot{Q}}{R^{3}\pi
 
 
 
-## Chapter 3: Initial simple formula
+## Chapter 3.1: Initial simple formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
 As seen above, $\phi$ only depends on $\alpha$ and $t$.
+
+Considering only the term in the brackets, the influencing factors are
+- Elongational viscosity power law exponent t (expected to fall between 1 and 0.25)
+- Half-angle alpha (expected to fall between 30 and 90 degrees)
 
 Hence it is easy to tabulate it and arrive at an approximation formula (in which $\alpha$ in degrees is to be input):
 
@@ -66,13 +70,15 @@ $\phi(t,\alpha) = max(0,\frac{1.2\alpha-33}{100})$
 See figure 1 below for the quality of the approximation.
 
 ![figure1](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_1.png)
+Figure 1: Approximation of $\phi$
 
-However, this only eliminates the last component of Gibsons unwieldy equation. Considering only the term in the brackets, the influencing factors are
+However, this only eliminates the last component of Gibsons unwieldy equation. 
+Considering the entire term in the brackets, the influencing factors are
 - Ratio of the radii (expected to fall between 1-to-5 and 1-to-30)
 - Elongational viscosity power law exponent t (expected to fall between 1 and 0.25)
 - Half-angle alpha (expected to fall between 30 and 90 degrees)
 
-We can now tabulate these results, plot them visually and develop a simpler function to represent the surface (figure 2).
+We can now tabulate these results at the discrete combinations given above and develop a simpler function to represent the surface (green surface in figure 2) and plot both visually:
 
 The function of the surface is given by:
 
@@ -81,16 +87,30 @@ $\frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}$
 It becomes clear that the influence of the ratio of the radii is small for all t > 0.25.
 
 ![figure2](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_2.png)
+Figure 2: Approximation of 'bracketed term'
 
+</details>
 In conclusion, for the elongational entrance pressure drop we get:
 
 $\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}  \right )$
 
 
+## Chapter 3.2: Verification/Validation of initial simple formula
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+If we use the data on injection capillary rheometer entrance pressure drops given by [1] in their figure 7, we can compare our mathematical model to real-world data.
+Please note that we use the power-law parameters of elongational viscosity given by [1] in their table 1.
+
+![figure3](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_3.png)
+Figure 3: Approximation of 'bracketed term'
+
+Expressed in mathematical terms, our formula results in an average error of 0.5 bar or 12 % (i.e. our model always predicts higher values).
 
 </details>
 
-## Chapter 4: Advanced formula
+## Chapter 4.1: Advanced formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -100,7 +120,7 @@ WIP
 
 </details>
 
-## Chapter 5: Verification/Validation
+## Chapter 4.2: Verification/Validation of advanced formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -109,6 +129,27 @@ WIP
 
 
 </details>
+
+## Chapter 5.1: Legacy formula
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+WIP
+
+
+</details>
+
+## Chapter 5.2: Verification/Validation of legacy formula
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+WIP
+
+
+</details>
+
 
 
 ## Chapter 6: Limitations of the model
