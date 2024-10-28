@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/791671677.svg)](https://doi.org/10.5281/zenodo.13999721)
+
 ## Chapter 0: Table of contents
 
 ## Chapter 1: Mission statement
