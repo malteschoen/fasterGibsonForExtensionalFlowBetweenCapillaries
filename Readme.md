@@ -8,9 +8,7 @@ This repository is supposed to hold information
 
 1. on the relations between elongational/extensional viscosity AND flow rate AND elongational/extensional pressure drop
 2. on the formulae developed by Gibson in the late eighties to depict these relations
-3. on our newer formula that gives up some accuracy to have better 
-
-and also materials for other researchers to reproduce our findings and improve on them.
+3. on our newer formula that gives up some accuracy in order to become a useful tool for everyday engineering work.
 
 </details>
 
@@ -27,22 +25,24 @@ With $\phi$ defined as follows
 ```
 <details>
 <summary>ADDITIONAL NOTES - CLICK TO EXPAND AND READ</summary>
-With I and t defining the elongational viscosity
+With I and t defining the elongational viscosity and the elongational stress, both following a simple power law:
 
 $\eta_{elong} =I \dot{\epsilon}^{t-1}$
+
+$\sigma_{elong} =I \dot{\epsilon}^{t}$
 
 R1, R0 and alpha define the geometry of the capilliaries
 - R0 is the bigger radius
 - R1 is the smaller radius
-- alpha is the conical half-angle (90 degrees for 'butted' capillaries , 59 degrees for holes drilled with DIN 1897 drill bits)
+- alpha is the conical half-angle (90 degrees for 'butted' capillaries, 59 degrees for holes drilled with DIN 1897 drill bits)
 
-gamma_dot is the shear rate. The average (!) elongation rate is:
+$\dot{\gamma_{app, R1}}$ is the apparent shear rate in the small capillary. The (circumferentially averaged) elongation rate present in the transition section between the cylindrical bores depends on the local radius R :
 
-TBA
+$\dot{\epsilon{average}(R)} = sin(\alpha)(1+cos(\alpha)) \frac {\dot{Q}}{R^{3}\pi}
   
 </details>
 
-## Chapter 3: Simplifications
+## Chapter 3: First simplification
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -60,14 +60,39 @@ However, this only eliminates the last component of Gibsons unwieldy equation. C
 - Elongational viscosity power law exponent t (expected to fall between 1 and 0.25)
 - Half-angle alpha (expected to fall between 30 and 90 degrees)
 
-We can now tabulate these results and plot them visually (figure 2).
+We can now tabulate these results, plot them visually and develop a simpler function to represent the surface (figure 2).
 
+It becomes clear that the influence of the ratio of the radii is small for all t > 0.25.
+
+The function of the surface is given by:
+
+$\frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}$
+
+
+</details>
+
+## Chapter 4: Second simplification
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+WIP
+
+
+</details>
+
+## Chapter 5: Verification/Validation
+
+<details>
+<summary>CLICK TO EXPAND AND READ</summary>
+
+WIP
 
 
 </details>
 
 
-## Chapter 4: Limitations of the model, guidance on pratical usage
+## Chapter 6: Limitations of the model
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -76,17 +101,30 @@ Like every other model, this model is wrong in the sense that it does not captur
 
 The model assumes:
 - isothermal flow
-- 
+- no shear contribution to entrance pressure loss
+- isotropic material (consequently, applicability to filled materials cannot be presumed)
+- no relaxation phenomena (no thixotropy, infinitely short relaxation times)
+
 </details>
 
-## Chapter 5: Some usage examples
+## Chapter 7: Some usage examples
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
-TBD
+WIP
 
 </details>
+
+
+## Citation
+
+You can (and should) cite this repository using the DOI given above.
+
+## Contact
+
+To get in touch, drop an e-mail to malte.schoen@rwth-aachen.de.
+
 
 ## Literature
 [1]  Gibson, A. G.: Die entry flow of reinforced polymers. In: Composites 20 (1989) 1, p. 57–64 - DOI: [https://doi.org/10.1016/0010-4361(89)90683-6](https://doi.org/10.1016/0010-4361(89)90683-6)
