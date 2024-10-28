@@ -23,6 +23,12 @@ With $\phi$ defined as follows
 ```math
 \phi(t,\alpha) = \int_{0}^{\alpha}\left \{(1+cos(\beta))^{t-1} (sin(\beta))^{t+1} \beta  \right \}  d\beta
 ```
+
+The highest rate of elongation is achieved at the entrance to the R1 capillary/small capillary:
+```math
+\dot{\epsilon}_{circumAvg,max}= sin(\alpha)(1+cos(\alpha)) \dot{\gamma}_{app,R1}
+```
+
 <details>
 <summary>ADDITIONAL NOTES - CLICK TO EXPAND AND READ</summary>
 With I and t defining the elongational viscosity and the elongational stress, both following a simple power law:
@@ -36,13 +42,15 @@ R1, R0 and alpha define the geometry of the capilliaries
 - R1 is the smaller radius
 - alpha is the conical half-angle (90 degrees for 'butted' capillaries, 59 degrees for holes drilled with DIN 1897 drill bits)
 
-$\dot{\gamma_{app, R1}}$ is the apparent shear rate in the small capillary. The (circumferentially averaged) elongation rate present in the transition section between the cylindrical bores depends on the local radius R :
+$\dot{\gamma}_{app,R1}$ is the apparent shear rate in the small capillary. The (circumferentially averaged) elongation rate present in the transition section between the cylindrical bores depends on the local radius R :
 
-$\dot{\epsilon{average}(R)} = sin(\alpha)(1+cos(\alpha)) \frac {\dot{Q}}{R^{3}\pi}
+$\dot{\epsilon}_{circumAvg}= sin(\alpha)(1+cos(\alpha)) \frac {\dot{Q}}{R^{3}\pi}$
   
 </details>
 
-## Chapter 3: First simplification
+
+
+## Chapter 3: Initial simple formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
@@ -55,6 +63,8 @@ $\phi(t,\alpha) = max(0,\frac{1.2\alpha-33}{100})$
 
 See figure 1 below for the quality of the approximation.
 
+![figure1](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_1.png)
+
 However, this only eliminates the last component of Gibsons unwieldy equation. Considering only the term in the brackets, the influencing factors are
 - Ratio of the radii (expected to fall between 1-to-5 and 1-to-30)
 - Elongational viscosity power law exponent t (expected to fall between 1 and 0.25)
@@ -62,16 +72,23 @@ However, this only eliminates the last component of Gibsons unwieldy equation. C
 
 We can now tabulate these results, plot them visually and develop a simpler function to represent the surface (figure 2).
 
-It becomes clear that the influence of the ratio of the radii is small for all t > 0.25.
-
 The function of the surface is given by:
 
 $\frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}$
 
+It becomes clear that the influence of the ratio of the radii is small for all t > 0.25.
+
+![figure2](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_2.png)
+
+In conclusion, for the elongational entrance pressure drop we get:
+
+$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}  \right )$
+
+
 
 </details>
 
-## Chapter 4: Second simplification
+## Chapter 4: Advanced formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
