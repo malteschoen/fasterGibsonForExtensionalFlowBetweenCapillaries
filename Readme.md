@@ -106,7 +106,7 @@ Please note that we use the power-law parameters of elongational viscosity given
 ![figure3](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_3.png)
 Figure 3: Approximation of 'bracketed term'
 
-Expressed in mathematical terms, our formula results in an average error of 0.5 bar or 12 % (i.e. our model always predicts higher values).
+Expressed in mathematical terms, our formula results in an average error of 0.5 bar or 12 % (i.e. our model usually predicts higher values).
 
 </details>
 
@@ -135,7 +135,7 @@ WIP
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
-WIP
+$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \left [ \frac{4}{3}(1-t) \right ]-\frac{\alpha}{250} \right )$
 
 
 </details>
