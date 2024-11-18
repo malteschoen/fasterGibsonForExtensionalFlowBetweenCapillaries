@@ -101,10 +101,10 @@ $\frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}$
 It becomes clear that the influence of the ratio of the radii is small for all t > 0.25.
 
 ![figure2](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_2.png)
-Figure 2: Approximation of 'bracketed term'
+Figure 2: Approximation of 'bracketed term' with the initial simple formula
 
 </details>
-In conclusion, for the elongational entrance pressure drop we get:
+In conclusion, for the elongational entrance pressure drop using the inital simple formula we get:
 
 $\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \frac{4}{25}\cdot t ^ \frac{5}{-3} +\frac{\alpha}{200}  \right )$
 
@@ -119,9 +119,16 @@ Please note that we use the power-law parameters of elongational viscosity given
 
 ![figure3](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_3.png)
 
-Figure 3: Comparison between experimental data and our model
+Figure 3: Comparison between injection moulding dataset and the initial simple formula
 
-Expressed in mathematical terms, our formula results in an average error of 0.5 bar or 12 % (i.e. our model usually predicts higher values).
+Expressed in mathematical terms, our initial simple formula results in an average error of 0.5 bar or 12 % (i.e. our model usually predicts higher values) for the injection moulding data set (t = 0.77). However, performance for other elongational flow exponents t is unknown. Hence we compare our initial simple formula to the dataset for the bracketed term. 
+
+![figure4](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_4.png)
+
+Figure 4: Comparison between bracketed term dataset and the initial simple formula. Square symbols indicate dataset, circles our initial simple formula.
+
+Again, it becomes clear that the influence of the ratio of the radii is notable only for t < 0.25. Performance of our initial simple formula is fair. The data for t = 1 is not matched well. Expressed in mathematical terms, our initial simple formula results in an average error of 28 %, primarily driven by the poor fit for t = 1. The single greatest error is 92 %.
+
 
 </details>
 
@@ -129,18 +136,25 @@ Expressed in mathematical terms, our formula results in an average error of 0.5 
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
-
-WIP
-
-
+Seeing that the effect of t is non-linear we can instead model it using 
 </details>
+In conclusion, for the elongational entrance pressure drop using the advanced formula we get:
+
+$ \Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \frac{4}{5}\cdot t ^ \frac{-4}{5} +\frac{3}{4} \alpha ^ \frac{3}{200}  -\frac{4}{5}\right)$
+
+
+
 
 ## Chapter 4.2: Verification/Validation of advanced formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
-WIP
+![figure5](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_5.png)
+
+Figure 5: Comparison between bracketed term dataset and the advanced formula. Square symbols indicate dataset, circles our initial simple formula.
+
+Again, it becomes clear that the influence of the ratio of the radii is notable only for t < 0.25. Performance of our advanced formula is good. The data for t = 1 is now matched well. Expressed in mathematical terms, our initial simple formula results in an average error of 12 %, primarily driven by the poor fit for low alpha. The single greatest error is 38 %.
 
 
 </details>
@@ -150,17 +164,24 @@ WIP
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
-$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \left [ \frac{4}{3}(1-t) \right ]-\frac{\alpha}{250} \right )$
-
+If we are only interested in the results for intermediate values (0.5; 0.75) of t usually encountered in plastics compounds and the higher (> 50°) angles usually encountered in dies, we can create a simplified linear model.
 
 </details>
+
+In conclusion, for the elongational entrance pressure drop using the legacy linear formula we get:
+
+$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \left [ \frac{4}{3}(1-t) \right ]-\frac{\alpha}{250} \right )$
 
 ## Chapter 5.2: Verification/Validation of legacy linear formula
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
 
-WIP
+![figure6](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_6.png)
+
+Figure 6: Comparison between bracketed term dataset and the advanced formula. Square symbols indicate dataset, circles our legacy linear formula.
+
+Again, it becomes clear that the influence of the ratio of the radii is notable only for t < 0.25. Performance of our advanced formula is fair. The data for alpha = 30° is not matched well. The data for t = 0.25 it not matched at all. Expressed in mathematical terms, our legacy linear formula results in an average error of 22 %. The single greatest error is 50 %.
 
 
 </details>
@@ -194,7 +215,9 @@ WIP
 
 ## Chapter 8: Citation
 
-You can (and should) cite this work using the DOI given above.
+You can (and should) cite this work using the DOI:
+
+[![DOI](https://zenodo.org/badge/791671677.svg)](https://doi.org/10.5281/zenodo.13999721)
 
 ## Chapter 9: Contact
 
