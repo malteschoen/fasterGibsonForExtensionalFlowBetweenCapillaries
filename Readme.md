@@ -121,7 +121,9 @@ Please note that we use the power-law parameters of elongational viscosity given
 
 Figure 3: Comparison between injection moulding dataset and the initial simple formula
 
-Expressed in mathematical terms, our initial simple formula results in an average error of 0.5 bar or 12 % (i.e. our model usually predicts higher values) for the injection moulding data set (t = 0.77). However, performance for other elongational flow exponents t is unknown. Hence we compare our initial simple formula to the dataset for the bracketed term. 
+Expressed in mathematical terms, our initial simple formula results in an average error of 0.5 bar or 12 % (i.e. our model usually predicts higher values) for the injection moulding data set (t = 0.77). 
+
+However, performance for other elongational flow exponents t is unknown. Hence we compare our initial simple formula to the dataset for the bracketed term. 
 
 ![figure4](https://github.com/malteschoen/fasterGibsonForExtensionalFlowBetweenCapillaries/blob/main/media/figure_4.png)
 
@@ -136,11 +138,11 @@ Again, it becomes clear that the influence of the ratio of the radii is notable 
 
 <details>
 <summary>CLICK TO EXPAND AND READ</summary>
-Seeing that the effect of t is non-linear we can instead model it using 
+Seeing that the effect of t is non-linear we can improve the model by adding an exponent to alpha.
 </details>
-In conclusion, for the elongational entrance pressure drop using the advanced formula we get:
+For the elongational entrance pressure drop using the advanced formula we get:
 
-$ \Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \frac{4}{5}\cdot t ^ \frac{-4}{5} +\frac{3}{4} \alpha ^ \frac{3}{200}  -\frac{4}{5}\right)$
+$\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t}  \frac{4}{5} \left ( t ^ \frac{-4}{5} +\frac{1}{53} \alpha ^ \frac{3}{4}  -1\right)$
 
 
 
@@ -168,7 +170,7 @@ If we are only interested in the results for intermediate values (0.5; 0.75) of 
 
 </details>
 
-In conclusion, for the elongational entrance pressure drop using the legacy linear formula we get:
+For the elongational entrance pressure drop using the legacy linear formula we get:
 
 $\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \left [ \frac{4}{3}(1-t) \right ]-\frac{\alpha}{250} \right )$
 
@@ -181,7 +183,7 @@ $\Delta p_{elong} =I \dot{\gamma}_{app,R1}^{t} \left ( \left [ \frac{4}{3}(1-t) 
 
 Figure 6: Comparison between bracketed term dataset and the advanced formula. Square symbols indicate dataset, circles our legacy linear formula.
 
-Again, it becomes clear that the influence of the ratio of the radii is notable only for t < 0.25. Performance of our advanced formula is fair. The data for alpha = 30° is not matched well. The data for t = 0.25 it not matched at all. Expressed in mathematical terms, our legacy linear formula results in an average error of 22 %. The single greatest error is 50 %.
+Again, it becomes clear that the influence of the ratio of the radii is notable only for t < 0.25. Performance of our legacy linear formula varies. The data for alpha = 30° is not matched well. The data for t = 0.25 it not matched at all. Expressed in mathematical terms, our legacy linear formula results in an average error of 22 %. The single greatest error is 50 %.
 
 
 </details>
